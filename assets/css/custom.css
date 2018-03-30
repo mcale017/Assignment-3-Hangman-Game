@@ -1,0 +1,55 @@
+body {
+    background: url(../images/background.jpg);
+    background-position: center 325px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: #eee3c7;
+}
+
+.jumbotron h1 {
+    color: #004f30;
+}
+
+#message {
+    color: #c51230;
+}
+
+.restart-button, .restart-button:hover, .restart-button:active, .restart-button:visited, .restart-button:focus {
+    background-color: #004f30;
+    color: #eee3c7;
+}
+
+.guess-button, .guess-button:hover, .guess-button:active, .guess-button:visited, .guess-button:focus {
+    background-color: #004f30;
+    color: #eee3c7;
+}
+
+.col-lg-5 {
+    background-color: #eee3c7;
+    min-height: 600px;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.col-lg-5 .row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.col-lg-5 .row > h2 {
+    color: #c51230;
+}
+
+#current-player, #correct-guesses, #incorrect-guesses, #guesses-left {
+    color: #004f30;
+    font-size: 20px;
+}
+
+#player-picture {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
