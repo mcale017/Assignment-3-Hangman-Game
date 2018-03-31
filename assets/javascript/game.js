@@ -111,7 +111,7 @@ function startgame() {
     guessesleftElement.textContent = guessesleft;
     correctguessesElement.textContent = "";
     incorrectguessesElement.textContent = "";
-    messageElement.textContent = "Press any letters to start guessing the player!";
+    messageElement.textContent = "Press any letter to start guessing the player!";
     picturemessageElement.textContent = "Who's it going to be?";
     playerpictureElement.setAttribute("src", "assets/images/player0.jpg");
 
