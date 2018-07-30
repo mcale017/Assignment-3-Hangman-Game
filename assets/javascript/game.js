@@ -15,18 +15,18 @@ var players = [
 ];
 
 // Array of players' pictures
-var playerpictures = [  "assets/images/player1.jpg",
-                        "assets/images/player2.jpg",
-                        "assets/images/player3.jpg",
-                        "assets/images/player4.jpg",
-                        "assets/images/player5.jpg",
-                        "assets/images/player6.jpg",
-                        "assets/images/player7.jpg",
-                        "assets/images/player8.jpg",
-                        "assets/images/player9.jpg",
-                        "assets/images/player10.jpg",
-                        "assets/images/player11.jpg",
-                        "assets/images/player12.jpg"
+var playerpictures = [  "assets/images/app/player1.jpg",
+                        "assets/images/app/player2.jpg",
+                        "assets/images/app/player3.jpg",
+                        "assets/images/app/player4.jpg",
+                        "assets/images/app/player5.jpg",
+                        "assets/images/app/player6.jpg",
+                        "assets/images/app/player7.jpg",
+                        "assets/images/app/player8.jpg",
+                        "assets/images/app/player9.jpg",
+                        "assets/images/app/player10.jpg",
+                        "assets/images/app/player11.jpg",
+                        "assets/images/app/player12.jpg"
 ]
 
 // Array of messages that'll go with the pictures
@@ -113,14 +113,14 @@ function startgame() {
     incorrectguessesElement.textContent = "";
     messageElement.textContent = "Press any letter to start guessing the player!";
     picturemessageElement.textContent = "Who's it going to be?";
-    playerpictureElement.setAttribute("src", "assets/images/player0.jpg");
+    playerpictureElement.setAttribute("src", "assets/images/app/player0.jpg");
 
     // Just console logging the current player each time
     console.log(currentplayer);
 }
 
 // Function for checking each guesses
-function check(letter) {    
+function check(letter) {
     // This will check if the letter guessed is in the player's name
     // In this if iteration, the letter guessed is not in the player's name
     if (currentplayer.indexOf(letter) === -1) {
@@ -156,7 +156,6 @@ function check(letter) {
 }
 
 // Function to change the source of the player picture
-
 function playerpicture(source) {
     playerpictureElement.setAttribute("src", source);
 }
@@ -164,7 +163,7 @@ function playerpicture(source) {
 
 // Function that will end the game if conditions are met
 function result() {
-    // This is triggered by when there are no more _ left on player's name
+    // This is triggered when there are no more _ left on player's name
     // It also sets the # of guesses left at 0 so next button you press will restart the game as well
     if (wordprogress.indexOf('_') === -1) {
         messageElement.textContent = "You guessed the correct player, you win!"
